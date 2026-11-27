@@ -1,0 +1,26 @@
+CSS
+.align-center ul:not(.actions):not(.icons),
+.spotlight ul:not(.actions):not(.icons) {
+	display: inline-block;
+	text-align: left;
+	padding-left: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.align-center ul:not(.actions):not(.icons) li,
+.spotlight ul:not(.actions):not(.icons) li {
+	text-align: left;
+	padding-left: 0.25em;
+}
+
+@media screen and (max-width: 736px) {
+	.align-center ul:not(.actions):not(.icons),
+	.spotlight ul:not(.actions):not(.icons) {
+		display: block;
+		width: fit-content;
+		max-width: 100%;
+		padding-left: 1.4em;
+		list-style-position: outside;
+	}
+}
